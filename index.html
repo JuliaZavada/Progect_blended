@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -21,7 +21,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header hidden">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
@@ -60,7 +60,7 @@
         </button>
       </div>
 
-      <div class="mobile-menu">
+      <div class="mobile-menu hidden">
         <div class="container mobile-menu-container">
           <button class="mobile-close" type="button">
             <svg class="mobile-ikon-close" width="8" height="8">
@@ -70,7 +70,9 @@
           <nav class="mobile-menu-nav">
             <ul class="mobile-nav-list">
               <li class="mobile-nav-item">
-                <a class="mobile-nav-link mobile-current" href="./index.html">Studio</a>
+                <a class="mobile-nav-link mobile-current" href="./index.html"
+                  >Studio</a
+                >
               </li>
               <li class="mobile-nav-item">
                 <a class="mobile-nav-link" href="">Portfolio</a>
@@ -88,7 +90,9 @@
                 >
               </li>
               <li class="mobile-adress-tel">
-                <a class="mobile-adress-link mobile-current" href="tel:+110001111111"
+                <a
+                  class="mobile-adress-link mobile-current"
+                  href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 >
               </li>
@@ -128,13 +132,53 @@
       </div>
     </header>
     <main>
-      <section class="main">
+      <section>
+        <div class="container hero">
+          <div class="hero-text-container">
+            <h1 class="hero-title">EcoTote — Стиль, що не шкодить планеті</h1>
+            <div class="hero-text">
+              <p class="hero-text-descr">
+                Екологічні сумки для тих, хто дбає про майбутнє. Обирайте стиль
+                та відповідальність разом з EcoTote.
+              </p>
+              <a class="hero-btn" href="#id-section-assortment">Купити зараз</a>
+            </div>
+          </div>
+          <div class="thumb">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./images/hero/hero-img-min.jpg    1x,
+                  ./images/hero/hero-img@2x-min.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/hero/hero-img-tab-min.jpg    1x,
+                  ./images/hero/hero-img-tab@2x-min.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/hero/hero-img-mob-min.jpg    1x,
+                  ./images/hero/hero-img-mob@2x-min.jpg 2x
+                "
+              />
+              <img src="./images/hero/hero-img-min.jpg" alt="Eko Tout bags" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="main hidden">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="main-botton" type="button">Order Service</button>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages hidden">
         <div class="container">
           <h2 class="visually-hidden">our advantages</h2>
           <ul class="advantages-list">
@@ -189,7 +233,7 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -369,7 +413,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -623,7 +667,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container">
         <div class="footer-main-text">
           <a class="footer-link" href="./index.html">
@@ -688,7 +732,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
         <button class="modal-close" type="button">
           <svg class="modal-ikon-close" width="8" height="8">
